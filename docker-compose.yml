@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file:
+      - .env.local
+    ports:
+      - "9000:9000"
+    depends_on:
+      - vectorstore
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "3000:80"
+
+  vectorstore:
+    image: redis:6-alpine
+    command: ["redis-server", "--save", "900", "1"]
+    ports:
+      - "6379:6379"
