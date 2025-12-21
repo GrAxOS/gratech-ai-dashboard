@@ -79,7 +79,7 @@ The backend requires the following Azure API keys (configured in Azure App Setti
 
 ### Model Configuration
 Models are configured in the `MODELS` dictionary in `backend/main.py`:
-- `deepseek`: DeepSeek-V3.1
+- `deepseek`: DeepSeek-V3 (Azure deployment: "DeepSeek-V3.1")
 - `llama-405b`: Meta-Llama-3.1-405B-Instruct  
 - `gpt-5`: GPT-5 chat preview
 - `gpt-4o`: GPT-4o
