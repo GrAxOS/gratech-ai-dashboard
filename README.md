@@ -5,6 +5,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 
 ## 🚀 Overview
 **Gratech Super Brain** is a next-generation AI dashboard that orchestrates the world's most powerful language models into a single, cohesive interface. Instead of relying on a single AI provider, this system leverages a "Council of Minds" approach:
@@ -48,9 +49,9 @@ Access the live Super Brain dashboard here:
 2.  **Configure Environment Variables:**
     Create a `.env` file in the backend directory with your Azure AI API keys:
     ```bash
-    DEEPSEEK_KEY=your_deepseek_api_key
-    LLAMA_KEY=your_llama_api_key
-    AZURE_OPENAI_KEY=your_azure_openai_api_key
+    cd backend
+    cp .env.example .env
+    # Edit .env with your actual API keys
     ```
 3.  **Backend Setup:**
     ```bash
@@ -129,6 +130,9 @@ Send a message to one of the available AI models.
 
 ## 🤝 Contributing
 Open source is at the heart of innovation. Feel free to fork this repository, submit Pull Requests, or suggest new features.
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 *Built with ❤️ by Gratech*
