@@ -5,7 +5,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 ## 🚀 Overview
 **Gratech Super Brain** is a next-generation AI dashboard that orchestrates the world's most powerful language models into a single, cohesive interface. Instead of relying on a single AI provider, this system leverages a "Council of Minds" approach:
@@ -60,8 +60,9 @@ Access the live Super Brain dashboard here:
     uvicorn main:app --reload
     ```
 4.  **Frontend Setup:**
-    Open a new terminal in the project root directory:
+    Navigate back to the project root directory (or open a new terminal there):
     ```bash
+    cd ..  # if continuing from backend directory
     npm install
     npm run dev
     ```
@@ -78,6 +79,7 @@ docker run -p 80:80 gratech-dashboard-frontend
 ```bash
 cd backend
 docker build -t gratech-dashboard-backend .
+# Replace 'your_key' with your actual API keys before running
 docker run -p 8000:8000 \
   -e DEEPSEEK_KEY=your_key \
   -e LLAMA_KEY=your_key \
